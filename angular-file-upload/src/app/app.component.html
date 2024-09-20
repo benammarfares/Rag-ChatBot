@@ -1,0 +1,43 @@
+
+
+
+<div class="container">
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="floating-image">
+    <img src="assets/rag_image.jpg" alt="Floating Image">
+  </div>
+
+  <div class="content">
+    <div class="chat-functionality">
+      <h2>Chat RAG Model</h2>
+      <div class="two-column-layout">
+        <div class="left-column">
+          <h3>File Upload</h3>
+          <app-single-file-upload></app-single-file-upload>
+        </div>
+        <div class="right-column ">
+          <h3>Chat with RAG Model</h3>
+          <div class="chat-parag-container">
+            <p >This model is a reality augmented generator that bases its prompts on the provided documents 🤖 </p>
+            <br>
+            <div>
+              <img src="assets/rag.gif" alt="Floating Image">
+            </div>
+          </div>
+
+          <div class="spacer"></div>
+          <div class="chat-container">
+            <app-rag-chat></app-rag-chat>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

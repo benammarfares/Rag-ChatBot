@@ -1,0 +1,13 @@
+<div class="chat-wrapper">
+
+  <div>
+    <kendo-chat
+      messageBoxType="textarea"
+      [messages]="textareaMessages"
+      [user]="user"
+      (sendMessage)="sendTextareaMessages($event)"
+
+    >
+    </kendo-chat>
+  </div>
+</div>

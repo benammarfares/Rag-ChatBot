@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: spring-ai-lamma-file-upload
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cvdocs
+    username: admin
+    password: password
+  ai:
+    ollama:
+      base-url: ${AI_OLLAMA_BASE_URL:http://localhost:11434}
+      chat:
+        options:
+          model: ${MODEL_NAME:mistral}
+server:
+  port: 9292
+
+
+  vectorstore:
+    pgvector:
+    index-type: HNSW
+    distance-type: COSINE_DISTANCE
+    dimension: 1536
+  docker:
+    compose:
+      lifecycle-management: start_only

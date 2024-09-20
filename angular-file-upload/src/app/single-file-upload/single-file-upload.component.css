@@ -1,0 +1,110 @@
+.container {
+  height: 10vh;
+}
+.arial-font {
+  font-family: Arial, sans-serif;
+}
+.upload-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  width: 800px;
+}
+
+
+
+h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.file-input-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+
+.file-input {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+  display: none;
+
+}
+
+.file-label {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-label:hover {
+  background-color: #0056b3;
+}
+
+.file-details {
+  margin-top: 1.5rem;
+}
+
+.file-info {
+  background-color: #e9ecef;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.file-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.file-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.upload-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #218838;
+}
+
+.status-section {
+  margin-top: 1rem;
+}
+
+.status {
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.error-details {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  white-space: pre-line;
+}
+
+.upload-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+
+.uploading { background-color: #ffc107; }
+.success { background-color: #28a745; color: white; }
+.fail { background-color: #dc3545; color: white; }
+.waiting { background-color: #6c757d; color: white; }

@@ -1,0 +1,31 @@
+
+POST http://localhost:9292/api/chat-completion
+Content-Type: text/plain
+
+Heloo, how are you doing today?
+
+###
+
+# curl -X POST http://localhost:8080/api/chat-completion
+#-H "Content-Type: text/plain"
+#-d "Explain the importance of fast language models"
+POST http://localhost:9292/api/chat-completion
+Content-Type: text/plain
+
+Give me the spring boot ai code so i can point at groq and use the ai model to generate the code for me.
+
+###
+
+
+GET http://localhost:9292/test?message=What is spring boot
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+<div>
+  <input type="file" (change)="onFileSelected($event)" accept="application/pdf">
+  <button (click)="onUpload()">Upload</button>
+</div>
+<input type="file" class="file-input"
+       (change)="onFileSelected($event)" #fileUpload>
+
+
+<app-pdf-viewer [pdfUrl]="pdfUrl"></app-pdf-viewer>

@@ -1,0 +1,43 @@
+<div class="container arial-font">
+  <div class="upload-card">
+    <h2>Single File Upload</h2>
+
+    <div class="file-input-container">
+      <input type="file" id="fileUpload" class="file-input" (change)="onChange($event)" #fileUpload />
+      <label for="fileUpload" class="file-label">Choose a file</label>
+    </div>
+
+    <div *ngIf="file" class="file-details">
+      <section class="file-info">
+        <h3>File details:</h3>
+        <ul>
+          <li><strong>Name:</strong> {{file.name}}</li>
+          <li><strong>Type:</strong> {{file.type}}</li>
+          <li><strong>Size:</strong> {{formatFileSize(file.size)}}</li>
+        </ul>
+      </section>
+
+      <button (click)="onUpload()" class="upload-button" [disabled]="status === 'uploading' || file.size > MAX_FILE_SIZE">
+        Upload the file
+      </button>
+
+      <section [ngSwitch]="status" class="status-section">
+        <p *ngSwitchCase="'uploading'" class="status uploading">
+          ⏳ Uploading... {{uploadProgress}}%
+          <progress [value]="uploadProgress" max="100"></progress>
+        </p>
+        <p *ngSwitchCase="'success'" class="status success">✅ Done!</p>
+        <p *ngSwitchCase="'fail'" class="status fail">
+          ❌ Error!
+          <span *ngIf="errorMessage" class="error-details">{{errorMessage}}</span>
+        </p>
+        <p *ngSwitchDefault class="status waiting">😶 Waiting to upload...</p>
+      </section>
+    </div>
+  </div>
+  <div>
+    <app-pdf-viewer [pdfUrl]="pdfUrl"></app-pdf-viewer>
+    </div>
+</div>
+
+
