@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>uploading-files</artifactId>
+	<artifactId>uploading-files-application-Rag</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>uploading-files</name>
+	<name>Local-Rag-LoadingPdf-application</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

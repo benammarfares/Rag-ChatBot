@@ -1,8 +1,8 @@
 version: '3.8'
 services:
   ollama:
-    hostname: ollama-uploaded
-    container_name: ollama-uploaded
+    hostname: ollama-uploaded2
+    container_name: ollama-uploaded2
     image: ollama/ollama
     ports:
       - "11434:11434"

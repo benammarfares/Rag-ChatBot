@@ -17,7 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Controller
 @CrossOrigin(origins = "http://localhost:4200")
 
-public class FileUploadController {
+public class fileUploadController {
 
     private static final String UPLOAD_DIR = "src/main/resources/uploads/";
     private static final long MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB

@@ -17,7 +17,7 @@ Give me the spring boot ai code so i can point at groq and use the ai model to g
 ###
 
 
-GET http://localhost:9292/test?message=What is spring boot
+GET http://localhost:9292/q?message=What is spring boot
 
 
 
